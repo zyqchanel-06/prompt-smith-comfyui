@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-smith-comfyui"
+version = "0.1.0"
+description = "prompt-smith 的 ComfyUI 渲染适配器：提示词自检通过才出图，出图后可选质量门"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "zyqchanel-06" }]
+keywords = ["sdxl", "comfyui", "stable-diffusion", "prompt-engineering"]
+dependencies = [
+  "prompt-smith @ git+https://github.com/zyqchanel-06/prompt-smith.git@main",
+]
+
+[project.optional-dependencies]
+quality = ["Pillow>=9"]
+yaml = ["PyYAML>=6"]
+
+[project.scripts]
+promptsmith-render = "promptsmith_comfyui.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/zyqchanel-06/prompt-smith-comfyui"
+
+[tool.setuptools.packages.find]
+include = ["promptsmith_comfyui*"]
