@@ -1,0 +1,71 @@
+{
+  "name": "test-profile",
+  "description": "适配器测试用的最小档案（自包含，不依赖核心库仓库）",
+  "trigger": "anime style",
+  "quality": [
+    "masterpiece",
+    "best quality"
+  ],
+  "negative_base": [
+    "lowres",
+    "bad anatomy",
+    "watermark"
+  ],
+  "slots": {
+    "subject": {
+      "default": "1girl, solo"
+    },
+    "outfit": {
+      "default": ""
+    },
+    "scene": {
+      "default": ""
+    },
+    "pose": {
+      "default": "looking at viewer"
+    },
+    "expression": {
+      "default": "soft smile"
+    },
+    "framing": {
+      "default": "full body"
+    }
+  },
+  "required": [
+    "1girl"
+  ],
+  "forbidden": [
+    "watermark"
+  ],
+  "conflicts": [
+    {
+      "a": "daylight",
+      "b": "candlelight",
+      "reason": "光源互斥"
+    }
+  ],
+  "render": {
+    "adapter": "comfyui",
+    "comfyui_url": "http://127.0.0.1:8188",
+    "checkpoint": "test.safetensors",
+    "lora": {
+      "name": "test_lora.safetensors",
+      "strength": 0.8
+    },
+    "width": 832,
+    "height": 1216,
+    "steps": 20,
+    "cfg": 6.5
+  },
+  "quality_gate": {
+    "brightness": [
+      110,
+      175
+    ],
+    "contrast_min": 60
+  },
+  "safety": {
+    "adult_only": true,
+    "max_tags": 75
+  }
+}

@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: 单测 (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.9', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: 安装核心库 prompt-smith
+        run: pip install "git+https://github.com/zyqchanel-06/prompt-smith.git@main"
+
+      - name: 编译检查
+        run: python -m compileall -q promptsmith_comfyui
+
+      - name: 单元测试
+        run: python -m unittest discover -s tests -v
+
+      - name: CLI 帮助可用
+        run: python -m promptsmith_comfyui --help

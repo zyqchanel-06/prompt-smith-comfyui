@@ -18,7 +18,8 @@ from promptsmith import SlotRequest, load_profile  # noqa: E402
 from promptsmith_comfyui.graph import build_graph, normalize_render  # noqa: E402
 from promptsmith_comfyui.render import RenderRefused, render  # noqa: E402
 
-PROFILE_PATH = os.path.join(os.path.abspath(CORE_ROOT), "profiles", "example.json")
+# 用仓库自带的 fixture：CI 里不会去依赖 ../prompt-smith 的目录布局
+PROFILE_PATH = os.path.join(HERE, "fixtures", "profile.json")
 
 
 class TestNormalizeRender(unittest.TestCase):
