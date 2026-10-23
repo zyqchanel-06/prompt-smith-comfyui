@@ -3,6 +3,7 @@
 **prompt-smith 的 ComfyUI 渲染适配器**：用档案构建提示词 → 自检 → 提交 ComfyUI → 出图 → 质量门，一条命令走完。
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/zyqchanel-06/prompt-smith-comfyui?color=blue)](https://github.com/zyqchanel-06/prompt-smith-comfyui/releases)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 
 ---
