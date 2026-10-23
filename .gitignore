@@ -12,6 +12,8 @@ venv/
 out/
 output/
 *.png
+!docs/screenshots/*.png
+!docs/screenshots/*.webp
 *.webp
 
 # 编辑器 / 系统
@@ -19,3 +21,4 @@ output/
 .idea/
 .DS_Store
 Thumbs.db
+
