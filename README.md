@@ -8,6 +8,11 @@
 
 ![自检门禁：不通过就不出图，退出码可用于脚本](docs/screenshots/self-check-gate.svg)
 
+![同一模型、同一种子，只换提示词的效果对比](docs/screenshots/comparison.png)
+
+> 左边是新手常见写法（堆质量词、没结构），右边是同一条需求用档案+槽位生成的结果。
+> 参数完全一致：SDXL · 832x1216 · 28 steps · cfg 6.5 · seed 20261024。
+
 ---
 
 ## 和 prompt-smith 的关系
