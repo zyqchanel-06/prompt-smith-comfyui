@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="501" viewBox="0 0 1180 501">
+<rect x="0" y="0" width="1180" height="501" rx="10" fill="#0d1117"/>
+<rect x="0" y="0" width="1180" height="42" rx="10" fill="#161b22"/>
+<rect x="0" y="32" width="1180" height="10" rx="0" fill="#161b22"/>
+<circle cx="22" cy="21" r="6" fill="#ff5f56"/>
+<circle cx="42" cy="21" r="6" fill="#ffbd2e"/>
+<circle cx="62" cy="21" r="6" fill="#27c93f"/>
+<text x="1006" y="26" font-family="Consolas, Menlo, monospace" font-size="13" fill="#6e7681">promptsmith-render</text>
+<text x="26" y="66" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#7ee787" xml:space="preserve">$ promptsmith-render -p profiles/example.json --subject "1girl" --extra "watermark"</text>
+<text x="26" y="120" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#ff7b72" xml:space="preserve">拒绝渲染: 提示词未通过自检，已拒绝渲染：</text>
+<text x="26" y="147" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#ff7b72" xml:space="preserve">  正向提示词出现红线词：watermark（会破坏画风一致性）</text>
+<text x="26" y="174" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#6e7681" xml:space="preserve">  （确需出图请加 --force）</text>
+<text x="26" y="201" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#d29922" xml:space="preserve">exit=3    ← 一张都没画，省下几分钟显卡</text>
+<text x="26" y="255" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#7ee787" xml:space="preserve">$ promptsmith-render -p profiles/example.json --subject "1girl, solo" --count 2</text>
+<text x="26" y="309" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#ff7b72" xml:space="preserve">ComfyUI 错误: ComfyUI 未运行。请先启动它（默认 http://127.0.0.1:8188），</text>
+<text x="26" y="336" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#ff7b72" xml:space="preserve">或把档案里的 render.comfyui_url 指向正确地址。</text>
+<text x="26" y="363" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#d29922" xml:space="preserve">exit=4</text>
+<text x="26" y="417" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#6e7681" xml:space="preserve"># 退出码：0 成功 · 2 档案错误 · 3 自检未通过 · 4 ComfyUI 错误</text>
+<text x="26" y="444" font-family="Cascadia Code, Consolas, Menlo, monospace" font-size="15" fill="#6e7681" xml:space="preserve"># 可直接用于脚本门禁：自检不过就不出图</text>
+</svg>

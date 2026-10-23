@@ -6,6 +6,8 @@
 [![Release](https://img.shields.io/github/v/release/zyqchanel-06/prompt-smith-comfyui?color=blue)](https://github.com/zyqchanel-06/prompt-smith-comfyui/releases)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 
+![自检门禁：不通过就不出图，退出码可用于脚本](docs/screenshots/self-check-gate.svg)
+
 ---
 
 ## 和 prompt-smith 的关系
