@@ -153,6 +153,36 @@ open("out.png", "wb").write(client.download(images[0]))
 
 可以直接用在脚本或 CI 里做批量出图门禁。
 
+## Roadmap
+
+**已完成**
+- 自检门禁（不通过就不提交渲染）+ `--force` 逃生口
+- ComfyUI 工作流构建（纯 urllib，零第三方依赖）
+- 退出码语义（0/2/3/4）供脚本使用
+- 出图后质量门核对
+
+**计划中**
+- 更多工作流模板（图生图、参考图编辑）
+- 批量渲染与失败重试策略
+
+**暂不考虑**
+- 内置 WebUI（保持 CLI 形态，方便进脚本和 CI）
+- 打包模型权重（用户自备）
+
+---
+
+## 参与与反馈
+
+测试全部在「提交给 ComfyUI 之前」结束，**不需要显卡就能跑**：
+
+```bash
+python -m unittest discover -s tests
+```
+
+报问题时请附上你的 ComfyUI 版本和工作流 JSON（脱敏后）。
+
+---
+
 ## License
 
 MIT —— 见 [LICENSE](LICENSE)。
